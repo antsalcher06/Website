@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willkommen Osttirol Team</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .arrow {
+            display: inline-block;
+            transform: rotate(45deg); /* Für einen diagonalen Pfeil */
+            font-size: 2em; /* Größe des Pfeils */
+            margin-left: 10px;
+        }
+        /* Oder ein einfacherer Pfeil mit Unicode */
+        .arrow-unicode {
+            font-size: 1.5em;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hallo Osttirol Team</h1>
+    <h4>So sieht Ihr Chatbot dann auf der Website aus (Schauen Sie nach rechts unten <span class="arrow-unicode">&#8600;</span>)</h4>
+    <script type="text/javascript">
+        (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+              window.voiceflow.chat.load({
+                verify: { projectID: '683f0bb188e6cd4b0594e262' },
+                url: 'https://general-runtime.voiceflow.com',
+                versionID: 'production',
+                voice: {
+                  url: "https://runtime-api.voiceflow.com"
+                }
+              });
+            }
+            v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+      </script>
+</body>
+</html>
